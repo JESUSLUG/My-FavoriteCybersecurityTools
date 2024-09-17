@@ -63,9 +63,3 @@ El archivo `repos.txt` contiene todas las URLs de repositorios. Si lo deseas, pu
 ## Contribuciones
 
 Si tienes sugerencias, mejoras o nuevas funcionalidades que te gustaría agregar, siéntete libre de hacer un pull request o crear un issue en el repositorio.
-
-## Licencia
-
-Este proyecto está bajo la [Licencia MIT](LICENSE).
-
----
