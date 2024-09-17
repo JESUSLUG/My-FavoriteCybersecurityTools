@@ -20,6 +20,9 @@ Este script en Python tiene como objetivo facilitar la recopilación, organizaci
 
 ```bash
 git clone https://github.com/tu-usuario/tu-repo.git
+```
+
+```bash
 cd tu-repo
 ```
 
@@ -28,7 +31,7 @@ cd tu-repo
 Puedes ejecutar el script directamente desde la terminal:
 
 ```bash
-python3 cyber_installer.py
+python3 ReposFavs.py
 ```
 
 ### 3. Usar el menú interactivo
