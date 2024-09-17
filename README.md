@@ -1,4 +1,3 @@
-```markdown
 # CyberSecurity Tool Installer
 
 Este script en Python tiene como objetivo facilitar la recopilación, organización e instalación de tus herramientas favoritas de ciberseguridad desde repositorios de GitHub. La idea es mantener una lista personalizada de herramientas que puedes clonar y gestionar fácilmente desde un solo script.
