@@ -1,3 +1,3 @@
-https://github.com/Rannden-SHA/EnumeRannden.git 
-https://github.com/Manisso/fsociety.git
-https://github.com/screetsec/TheFatRat
+https://github.com/Rannden-SHA/EnumeRannden.git # EnumeRannden
+https://github.com/Manisso/fsociety.git # Fsociety Hacking Tools Pack
+https://github.com/screetsec/TheFatRat # TheFatRat
