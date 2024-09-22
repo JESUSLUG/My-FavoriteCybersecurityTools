@@ -1,0 +1,97 @@
+**Comandos esenciales de Nmap para CTF y Hacking Ético**
+
+Antes de iniciar, puedes agregar las opciones **T2** o **T1** para hacer que el escaneo sea más lento y discreto, en cualquier combinación de comandos Nmap:
+
+- **Escaneo lento (T2 o T1)**  
+   Disminuye la velocidad de escaneo para evadir sistemas de detección de tráfico rápido.  
+   `nmap -T2 <comando>`  
+   O también:  
+   `nmap -T1 <comando>`
+
+---
+
+1. **Escaneo básico de puertos**  
+   Para descubrir qué servicios están activos en una máquina.  
+   `nmap <IP>`
+
+2. **Escaneo con detección de versión**  
+   Identifica versiones de servicios en los puertos abiertos.  
+   `nmap -sV <IP>`
+
+3. **Escaneo de sistema operativo**  
+   Detecta el sistema operativo de la máquina objetivo.  
+   `nmap -O <IP>`
+
+4. **Escaneo rápido**  
+   Escanea los puertos más comunes rápidamente.  
+   `nmap -F <IP>`
+
+5. **Escaneo agresivo**  
+   Combina la detección de puertos, servicios y versiones.  
+   `nmap -A <IP>`
+
+6. **Escaneo con scripts**  
+   Usa scripts NSE para obtener más información detallada.  
+   `nmap --script <script> <IP>`
+
+7. **Escaneo sin ping**  
+   Para escanear una máquina que no responde a pings.  
+   `nmap -Pn <IP>`
+
+8. **Escaneo de puertos específicos**  
+   Escanea solo puertos seleccionados.  
+   `nmap -p <puerto(s)> <IP>`
+
+9. **Escaneo de red completa**  
+   Escanea una red completa de dispositivos.  
+   `nmap <rango-IP>`
+
+10. **Escaneo de puertos UDP**  
+    Detecta servicios en puertos UDP.  
+    `nmap -sU <IP>`
+
+11. **Escaneo de vulnerabilidades**  
+   Usa scripts NSE para detectar vulnerabilidades conocidas.  
+   `nmap --script vuln <IP>`
+
+12. **Escaneo de scripts de explotación**  
+   Utiliza scripts NSE para detectar vulnerabilidades explotables específicas.  
+   `nmap --script exploit <IP>`
+
+13. **Detección de vulnerabilidades HTTP**  
+   Ejecuta scripts para revisar vulnerabilidades en servidores web HTTP.  
+   `nmap --script http-vuln* <IP>`
+
+14. **Escaneo de SMB**  
+   Detecta vulnerabilidades y servicios SMB (como EternalBlue).  
+   `nmap --script smb-vuln* <IP>`
+
+15. **Detección de vulnerabilidades SSL/TLS**  
+   Busca problemas relacionados con certificados SSL.  
+   `nmap --script ssl-enum-ciphers <IP>`
+
+16. **Escaneo sigiloso (SYN scan)**  
+   Envia paquetes SYN sin completar la conexión (más difícil de detectar).  
+   `nmap -sS <IP>`
+
+17. **Escaneo fragmentado**  
+   Divide los paquetes en fragmentos más pequeños para evadir filtros.  
+   `nmap -f <IP>`
+
+18. **Escaneo con señuelos**  
+   Agrega direcciones IP falsas para confundir al sistema de detección.  
+   `nmap -D RND:10 <IP>`
+
+---
+
+**Comando recomendado:**
+
+Si quieres un **comando completo** que cubra los elementos más importantes en un solo escaneo, podrías usar este:
+
+**Escaneo agresivo con scripts de vulnerabilidades, versiones y evasión de firewalls**  
+Este comando realiza un escaneo agresivo de puertos, detecta versiones, identifica el sistema operativo y utiliza scripts NSE de vulnerabilidades, todo mientras usa técnicas de evasión.  
+`nmap -A --script vuln -f -T2 <IP>`
+
+---
+
+Este comando es poderoso porque combina detección detallada con técnicas para evitar la detección, haciendo que tu escaneo sea a la vez profundo y sigiloso.
