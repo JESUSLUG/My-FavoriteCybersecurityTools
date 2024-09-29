@@ -1,3 +1,4 @@
 https://github.com/Rannden-SHA/EnumeRannden.git # EnumeRannden
 https://github.com/Manisso/fsociety.git # Fsociety Hacking Tools Pack
 https://github.com/screetsec/TheFatRat # TheFatRat
+https://github.com/xct/kali-clean # Desktop desktop setup mi fav :3
